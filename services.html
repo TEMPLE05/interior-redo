@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMANDA PANDRIGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>   
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="section1">
+            <h1>Full design services</h1>
+            <p>We work closely with our clients to understand their individual needs and design their spaces to suit their individual wishes. Our services include: creating a unique and memorable mood-board for your house or space, designing a custom design proposal, and rendering the design proposal to capture its essence.</p>
+        </div>
+        <div id="section2">
+            <div id="top">
+            <img src="images/20.png" alt=""><img src="images/21.png" alt="Service 2"><img src="images/18.png" alt="Service 3">
+            </div>
+            <img id="bottom" src="images/services4.jpg" alt="">
+        </div> 
+        <div id="section3">
+            <h1>The design process</h1>
+            <p>Contact us to set up a meeting to discuss the details of your project, so that we can help you to uncover what your dream home looks like. As a first step, we'll thoroughly research the best style to suit your space, budget, and unique needs. Next, we'll develop a mood board that will help you to better visualize our ideas. Once we receive your approval on our vision, we'll move onto creating a series of design proposals. In the final step, your favorite proposal will then be flawlessly rendered in our programs to give you a virtual, but very realistic image of your newly-designed home.</p> 
+            <a href="pricing.html">See our pricing</a>
+        </div>
+    </main>
+     <footer>
+        <div id="footgroup">
+            <h2>What we do</h2>
+            <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Who we are</h2>
+            <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <div id="socials">
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram img.webp" alt="Instagram"></a>
+            </div>
+        </div>
+        <div>
+            <h2>subscribe to our newsletter</h2>
+            <form action="">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Type your email address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
